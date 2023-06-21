@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.title {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-family: "Open Sans";
+    color: #2a5fad;
+}
+.description {
+    margin-bottom: 50px;
+    font-family: "Open Sans";
+    color: #2a5fad;
+    font-size: 18px;
+    text-align: center;
+}
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    margin: 0 auto;
+}
+@media screen and (max-width: 540px) {
+    .page {
+        width: calc(100% - 40px);
+    }
+}
+.header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.main {
+    width: 100%;
+}
+.parameters {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    position: relative;
+}
+.link {
+    font-family: "Open Sans";
+    color: #2a5fad;
+    height: 30px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 0 10px;
+}
+.button {
+    background: #c10949;
+    border-radius: 9px;
+    border: none;
+    min-height: 40px;
+    width: fit-content;
+    padding: 5px 30px;
+    margin: 0 auto;
+    color: #fff;
+    font-size: 18px;
+    transition: 0.3s;
+}
+.button:hover {
+    transition: 0.3s;
+    background: #a40c41;
+    cursor: pointer;
+}
+.error-message {
+    position: absolute;
+    top: 33px;
+    left: 10px;
+    color: red;
+    font-family: "Open Sans";
+    text-align: center;
+    font-size: 12px;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+}
+.error-message_visible {
+    visibility: visible;
+    opacity: 1;
+    pointer-events: auto;
+    transition: 0.3s;
+}
+#qrcode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
